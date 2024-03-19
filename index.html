@@ -34,11 +34,15 @@
         </a>
       </div>
       <div>
-        <a href="#" id="login-button" class="inline-block text-sm px-4 py-2 leading-none border rounded text-blue-600 border-blue-600">Daftar / Login</a>
+        <a href="#" id="login-button" class="inline-block text-sm px-4 py-2 leading-none border rounded text-blue-600 border-blue-600">Login</a>
+      </div>
+      <div>
+        <a href="#" id="signup-button" class="inline-block text-sm px-4 py-2 leading-none border rounded text-blue-600 border-blue-600">Daftar</a>
       </div>
     </div>
   </nav>
 
+  <!-- Login -->
   <div id="login-popup" tabindex="-1"
     class="bg-black/50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 h-full items-center justify-center flex">
     <div class="relative p-4 w-full max-w-md h-full md:h-auto">
@@ -72,13 +76,6 @@
 
                     <button
                         class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
-                            src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub"
-                            class="h-[18px] w-[18px] ">
-                        Continue with GitHub
-                    </button>
-
-                    <button
-                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
                             src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"
                             class="h-[18px] w-[18px] ">Continue with
                         Google
@@ -87,9 +84,8 @@
 
                     <button
                         class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
-                            src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="Google"
-                            class="h-[18px] w-[18px] ">Continue with
-                        LinkedIn
+                            src="https://www.svgrepo.com/show/183607/facebook.svg" alt="Google"
+                            class="h-[18px] w-[18px] ">Continue with Facebook
                     </button>
                 </div>
 
@@ -120,15 +116,156 @@
 
                 <div class="mt-6 text-center text-sm text-slate-600">
                     Don't have an account?
-                    <a href="/signup" class="font-medium text-[#4285f4]">Sign up</a>
+                    <a href="/signup" class="font-medium text-[#4285f4]" >Sign up</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Sign up -->
+<div id="signup-popup" tabindex="-1"
+    class="bg-black/50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 h-full items-center justify-center flex">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
 
-    <!-- Container for demo purpose -->
+        <div class="relative bg-white rounded-lg shadow">
+            <button type="button"
+                class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close"><svg
+                    aria-hidden="true" class="w-5 h-5" fill="#c6c7c7" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        cliprule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Close popup</span>
+            </button>
+
+            <div class="p-5">
+                <h3 class="text-2xl mb-0.5 font-medium">Sign Up</h3>
+                <p class="mb-4 text-sm font-normal text-gray-800"></p>
+
+                <div class="text-center">
+                    <p class="mb-3 text-2xl font-semibold leading-5 text-slate-900">
+                        Create your account
+                    </p>
+                    <p class="mt-2 text-sm leading-4 text-slate-600">
+                        You can sign up for an account to access all features.
+                    </p>
+                </div>
+
+                <div class="mt-7 flex flex-col gap-2">
+                    <!-- Continue with Google button (unchanged) -->
+                    <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                            src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"
+                            class="h-[18px] w-[18px] ">Continue with
+                        Google
+                    </button>
+
+                    <!-- Continue with Facebook button (unchanged) -->
+                    <button
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                            src="https://www.svgrepo.com/show/183607/facebook.svg" alt="Google"
+                            class="h-[18px] w-[18px] ">Continue with Facebook
+                    </button>
+                </div>
+
+                <div class="flex w-full items-center gap-2 py-6 text-sm text-slate-600">
+                    <div class="h-px w-full bg-slate-200"></div>
+                    OR
+                    <div class="h-px w-full bg-slate-200"></div>
+                </div>
+
+                <!-- Sign up form -->
+                <form class="w-full">
+                    <label for="email" class="sr-only">Email address</label>
+                    <input name="email" type="email" autocomplete="email" required=""
+                        class="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Email Address" value="">
+                    <label for="password" class="sr-only">Password</label>
+                    <input name="password" type="password" autocomplete="current-password" required=""
+                        class="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Password" value="">
+                    <p class="mb-3 mt-2 text-sm text-gray-500">
+                        <a href="/forgot-password" class="text-blue-800 hover:text-blue-600">Forgot your password?</a>
+                    </p>
+                    <!-- Change button text to "Sign Up" -->
+                    <button type="submit"
+                        class="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400">
+                        Sign Up
+                    </button>
+                </form>
+
+                <div class="mt-6 text-center text-sm text-slate-600">
+                    Already have an account?
+                    <!-- Change sign up link to direct to login -->
+                    <a href="/login" class="font-medium text-[#4285f4]">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Signup Popup -->
+<div id="signup-popup" tabindex="-1" class="hidden fixed top-0 right-0 left-0 z-50 h-full items-center justify-center flex">
+  <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+      <div class="relative bg-white rounded-lg shadow">
+          <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close">
+              <svg aria-hidden="true" class="w-5 h-5" fill="#c6c7c7" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">Close popup</span>
+          </button>
+
+          <div class="p-5">
+              <h3 class="text-2xl mb-0.5 font-medium">Sign Up</h3>
+              <p class="mb-4 text-sm font-normal text-gray-800"></p>
+
+              <div class="text-center">
+                  <p class="mb-3 text-2xl font-semibold leading-5 text-slate-900">Create your account</p>
+                  <p class="mt-2 text-sm leading-4 text-slate-600">You can sign up for an account to access all features.</p>
+              </div>
+
+              <div class="mt-7 flex flex-col gap-2">
+                  <button class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60">
+                      <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="h-[18px] w-[18px]">
+                      Continue with Google
+                  </button>
+                  <button class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60">
+                      <img src="https://www.svgrepo.com/show/183607/facebook.svg" alt="Facebook" class="h-[18px] w-[18px]">
+                      Continue with Facebook
+                  </button>
+              </div>
+
+              <div class="flex w-full items-center gap-2 py-6 text-sm text-slate-600">
+                  <div class="h-px w-full bg-slate-200"></div>
+                  OR
+                  <div class="h-px w-full bg-slate-200"></div>
+              </div>
+
+              <form class="w-full">
+                  <label for="email" class="sr-only">Email address</label>
+                  <input name="email" type="email" autocomplete="email" required="" class="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1" placeholder="Email Address" value="">
+                  <label for="password" class="sr-only">Password</label>
+                  <input name="password" type="password" autocomplete="current-password" required="" class="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1" placeholder="Password" value="">
+                  <p class="mb-3 mt-2 text-sm text-gray-500">
+                      <a href="/forgot-password" class="text-blue-800 hover:text-blue-600">Forgot your password?</a>
+                  </p>
+                  <button type="submit" class="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400">Sign Up</button>
+              </form>
+
+              <div class="mt-6 text-center text-sm text-slate-600">
+                  Already have an account?
+                  <a href="/login" class="font-medium text-[#4285f4]">Log in</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+    <!-- Testimonial -->
 <div class="container my-24 mx-auto md:px-6">
     <section class="mb-32 text-center">
       <h2 class="mb-12 text-3xl font-bold">Testimonials</h2>
@@ -332,91 +469,8 @@
             </div>
         </div>
     </div>
-    <script>
-        const chatbox = document.getElementById("chatbox");
-const chatContainer = document.getElementById("chat-container");
-const userInput = document.getElementById("user-input");
-const sendButton = document.getElementById("send-button");
-const openChatButton = document.getElementById("open-chat");
-const closeChatButton = document.getElementById("close-chat");
-
-let isChatboxOpen = true; // Set the initial state to open
-
-// Function to toggle the chatbox visibility
-function toggleChatbox() {
-    chatContainer.classList.toggle("hidden");
-    isChatboxOpen = !isChatboxOpen; // Toggle the state
-}
-
-// Add an event listener to the open chat button
-openChatButton.addEventListener("click", toggleChatbox);
-
-// Add an event listener to the close chat button
-closeChatButton.addEventListener("click", toggleChatbox);
-
-// Add an event listener to the send button
-sendButton.addEventListener("click", function () {
-    const userMessage = userInput.value;
-    if (userMessage.trim() !== "") {
-        addUserMessage(userMessage);
-        respondToUser(userMessage);
-        userInput.value = "";
-    }
-});
-
-userInput.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-        const userMessage = userInput.value;
-        addUserMessage(userMessage);
-        respondToUser(userMessage);
-        userInput.value = "";
-    }
-});
-
-function addUserMessage(message) {
-    const messageElement = document.createElement("div");
-    messageElement.classList.add("mb-2", "text-right");
-    messageElement.innerHTML = `<p class="bg-blue-500 text-white rounded-lg py-2 px-4 inline-block">${message}</p>`;
-    chatbox.appendChild(messageElement);
-    chatbox.scrollTop = chatbox.scrollHeight;
-}
-
-function addBotMessage(message) {
-    const messageElement = document.createElement("div");
-    messageElement.classList.add("mb-2");
-    messageElement.innerHTML = `<p class="bg-gray-200 text-gray-700 rounded-lg py-2 px-4 inline-block">${message}</p>`;
-    chatbox.appendChild(messageElement);
-    chatbox.scrollTop = chatbox.scrollHeight;
-}
-
-function respondToUser(userMessage) {
-    // Replace this with your chatbot logic
-    setTimeout(() => {
-        addBotMessage("This is a response from the chatbot.");
-    }, 500);
-}
-
-// Automatically open the chatbox on page load
-toggleChatbox();
-        </script>
-  </section>
-
-  <script>
-    const loginButton = document.getElementById("login-button");
-const loginPopup = document.getElementById("login-popup");
-
-// Add event listener to the login button
-loginButton.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default link behavior
-    loginPopup.classList.remove("hidden"); // Show the login popup
-});
-
-// Add event listener to the close button in the login popup
-const closeButton = loginPopup.querySelector(".popup-close");
-closeButton.addEventListener("click", function () {
-    loginPopup.classList.add("hidden"); // Hide the login popup
-});
-  </script>
+        
+  <script src="script.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
