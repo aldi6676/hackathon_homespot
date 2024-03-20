@@ -72,6 +72,12 @@ toggleChatbox();
     // Ambil elemen tombol close pada popup login
     const loginCloseButton = loginPopup.querySelector('.popup-close');
 
+    const SignupButton = document.getElementById('signup-text');
+
+    const  signupText = document.getElementById('signup-text');
+
+    const  loginText = document.getElementById('login-text');
+
     // Ambil elemen popup signup
     const signupPopup = document.getElementById('signup-popup');
     // Ambil elemen tombol close pada popup signup
@@ -108,8 +114,20 @@ toggleChatbox();
     // Event listener untuk tombol daftar/login
     loginButton.addEventListener('click', showLoginPopup);
 
+    SignupButton.addEventListener('click', showSignupPopup);
+
     // Event listener untuk tombol close pada popup login
     loginCloseButton.addEventListener('click', hideLoginPopup);
 
     // Event listener untuk tombol close pada popup signup
     signupCloseButton.addEventListener('click', hideSignupPopup);
+
+    signupText.addEventListener('click', function() {
+        hideLoginPopup();
+        showSignupPopup();
+    });
+
+    loginText.addEventListener('click', function() {
+        hideSignupPopup();
+        showLoginPopup();
+    });
